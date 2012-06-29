@@ -33,7 +33,7 @@ RSpec.configure do |config|
   config.infer_base_class_for_anonymous_controllers = false
 
   # Headless configuration
-  headless = Headless.new 
+  headless = Headless.new(:display => '100')
 
   config.before(:suite) do
     headless.start
