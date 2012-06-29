@@ -2,7 +2,7 @@ require 'acceptance/acceptance_helper'
 
 feature 'Creating products' do
 
-  scenario 'creating a product' do
+  scenario 'creating a product', :js => true do
     visit new_product_path
 
     fill_in :name, :with => 'Some product'

@@ -32,8 +32,10 @@ RSpec.configure do |config|
   # rspec-rails.
   config.infer_base_class_for_anonymous_controllers = false
 
+  Capybara.javascript_driver = :webkit
+
   # Headless configuration
-  headless = Headless.new(:display => '100')
+  headless = Headless.new
 
   config.before(:suite) do
     headless.start
