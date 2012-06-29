@@ -35,7 +35,7 @@ RSpec.configure do |config|
   Capybara.javascript_driver = :webkit
 
   # Headless configuration
-  headless = Headless.new(:display => '100')
+  headless = Headless.new
 
   config.before(:suite) do
     headless.start
