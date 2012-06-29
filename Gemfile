@@ -15,6 +15,7 @@ gem 'jquery-rails'
 group :development, :test do
   gem 'rspec-rails'
   gem "capybara-webkit"
+  gem 'headless'
 end
 
 group :test do
