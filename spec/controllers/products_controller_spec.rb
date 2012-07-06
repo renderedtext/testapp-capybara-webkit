@@ -132,5 +132,4 @@ describe ProductsController do
       response.should redirect_to(products_url)
     end
   end
-
 end

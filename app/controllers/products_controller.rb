@@ -80,4 +80,14 @@ class ProductsController < ApplicationController
       format.json { head :ok }
     end
   end
+
+  def to_pdf
+    @product = Product.find(params[:id])
+
+    respond_to do |format|
+      format.pdf do
+        render :pdf => "test"
+      end
+    end
+  end
 end

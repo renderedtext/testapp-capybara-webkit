@@ -4,6 +4,9 @@ gem 'rails', '3.1.3'
 
 gem 'sqlite3'
 
+gem 'wkhtmltopdf'
+gem 'wicked_pdf'
+
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'
   gem 'coffee-rails', '~> 3.1.1'
