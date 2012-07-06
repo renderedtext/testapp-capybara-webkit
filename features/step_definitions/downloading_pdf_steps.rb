@@ -11,5 +11,5 @@ When /^I try to download a pdf file$/ do
 end
 
 Then /^I should download the pdf file$/ do
-  page.should have_content('Test PDF file.')
+  page.response_headers["Content-Type"].should == "application/pdf"
 end

@@ -150,7 +150,6 @@ GEM
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
     wicked_pdf (0.7.9)
-    wkhtmltopdf (0.1.2)
     xpath (0.1.4)
       nokogiri (~> 1.3)
 
@@ -169,4 +168,3 @@ DEPENDENCIES
   sqlite3
   uglifier (>= 1.0.3)
   wicked_pdf
-  wkhtmltopdf
