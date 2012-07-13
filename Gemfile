@@ -5,6 +5,7 @@ gem 'rails', '3.1.3'
 gem 'sqlite3'
 
 gem 'wicked_pdf'
+gem 'wkhtmltopdf-heroku'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'
