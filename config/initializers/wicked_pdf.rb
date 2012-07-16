@@ -1,3 +1,5 @@
-WickedPdf.config = {
-    :exe_path => '/usr/local/bin/wkhtmltopdf'
-}
+if ENV['CI'] == 'true'
+  WickedPdf.config = {
+    :exe_path => ENV['WKHTMLTOPDF_PATH']
+  }
+end
